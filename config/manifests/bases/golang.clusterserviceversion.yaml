@@ -1,0 +1,48 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: golang.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: App is the Schema for the apps API
+      displayName: App
+      kind: App
+      name: apps.operatorsdkgo.example.com
+      version: v1
+  description: operatorsdk-go-d
+  displayName: operatorsdk-go
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - test
+  links:
+  - name: Golang
+    url: https://golang.domain
+  maintainers:
+  - email: yyy
+    name: xxx
+  maturity: alpha
+  provider:
+    name: gwg
+    url: gwg.com
+  version: 0.0.0

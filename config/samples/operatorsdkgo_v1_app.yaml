@@ -1,0 +1,13 @@
+apiVersion: operatorsdkgo.example.com/v1
+kind: App
+metadata:
+  labels:
+    app.kubernetes.io/name: app
+    app.kubernetes.io/instance: app-sample
+    app.kubernetes.io/part-of: golang
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: golang
+  name: app-sample
+spec:
+  # TODO(user): Add fields here
+  name: "World_abc"
